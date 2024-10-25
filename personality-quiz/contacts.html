@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body class="bg-pink">
+    <header id="header" class="flex justify-center p-5 xl:p-7">
+      <a href="/">
+        <svg class="h-8 w-[75px] xl:h-[52px] xl:w-[120px]">
+          <use xlink:href="/sprite.svg#logo"></use>
+        </svg>
+      </a>
+    </header>
+
+    <!-- PERSONALITY QUIZ CONTACTS PAGE -->
+    <main id="main" class="overflow-hidden pb-40 pt-9 sm:pb-52">
+      <div class="container max-w-[890px]">
+        <h1
+          class="mb-[50px] text-center font-montserrat-semibold text-2xl text-white sm:text-3xl xl:text-5xl 2xl:text-6xl"
+        >
+          Данные уже в обработке!
+        </h1>
+        <div class="relative rounded-xl bg-white px-3 pb-14 pt-9 sm:rounded-3xl sm:px-10 sm:pb-20">
+          <form id="contacts-form" class="mx-auto w-full max-w-[400px]">
+            <div class="mb-10 space-y-4 sm:space-y-7">
+              <div class="space-y-2.5 sm:space-y-3 sm:text-center">
+                <label
+                  for="phone"
+                  class="block select-none font-montserrat-semibold text-base sm:text-xl"
+                  >Введите свой номер телефона</label
+                >
+                <input
+                  id="phone"
+                  type="tel"
+                  placeholder="Номер телефона"
+                  required
+                  class="flex w-full rounded-xl border border-solid border-secondary px-2.5 py-2 text-xs outline-none sm:px-5 sm:py-4 sm:text-[16px]"
+                />
+              </div>
+              <div class="space-y-3 sm:space-y-3 sm:text-center">
+                <label
+                  for="telegram"
+                  class="block select-none font-montserrat-semibold text-base sm:text-xl"
+                  >Введите свой e-mail:</label
+                >
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Ваш адрес электронной почты"
+                  required
+                  class="flex w-full rounded-xl border border-solid border-secondary px-2.5 py-2 text-xs outline-none sm:px-5 sm:py-4 sm:text-[16px]"
+                />
+              </div>
+            </div>
+            <button
+              id="contacts-form-btn"
+              type="submit"
+              class="group relative mx-auto flex h-[60px] w-[246px] items-center justify-between rounded-[30px] bg-green p-1 font-montserrat-semibold text-sm text-white transition-opacity disabled:pointer-events-none disabled:opacity-30 sm:w-[280px] sm:text-base"
+            >
+              <span class="ml-[26px]">Получить результаты</span>
+              <span
+                class="flex size-[53px] items-center justify-center rounded-full bg-pink transition-transform group-hover:translate-x-3"
+              >
+                <svg width="19" height="23">
+                  <use xlink:href="/sprite.svg#arrow"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
+          <svg
+            class="absolute bottom-[-5%] left-[-10%] z-[-1] h-[120px] w-32 xl:bottom-[-14%] xl:left-[-10%] xl:h-[176px] xl:w-[184px]"
+          >
+            <use xlink:href="/sprite.svg#stain-1"></use>
+          </svg>
+          <svg
+            class="absolute bottom-[-20%] left-[-2%] z-[-1] h-[170px] w-[195px] xl:bottom-[-19%] xl:left-[27%] xl:h-[199px] xl:w-[224px]"
+          >
+            <use xlink:href="/sprite.svg#stain-2"></use>
+          </svg>
+          <svg
+            class="absolute bottom-[-18%] right-[20%] z-[-2] size-[88px] xl:bottom-[-22%] xl:right-[34%] xl:size-[130px]"
+          >
+            <use xlink:href="/sprite.svg#stain-4"></use>
+          </svg>
+          <svg
+            class="absolute bottom-[-20%] right-[-20%] z-[-3] size-[230px] xl:bottom-[-22%] xl:right-[-10%] xl:size-[300px]"
+          >
+            <use xlink:href="/sprite.svg#stain-5"></use>
+          </svg>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="pb-7">
+      <div class="container max-w-[1719px]">
+        <div
+          class="flex flex-col items-center justify-between rounded-3xl border border-solid border-white bg-gray px-[30px] py-9 xl:flex-row xl:px-[62px] xl:pb-[55px] xl:pt-[46px]"
+        >
+          <div class="flex items-center gap-1">
+            <svg width="61" height="59" class="h-[46px] w-12 xl:h-[59px] xl:w-[61px]">
+              <use xlink:href="/sprite.svg#stain-1"></use>
+            </svg>
+            <svg width="69" height="62" class="h-12 w-[55px] xl:h-[59px] xl:w-[61px]">
+              <use xlink:href="/sprite.svg#stain-2"></use>
+            </svg>
+            <svg width="71" height="70" class="size-[55px] xl:size-[71px]">
+              <use xlink:href="/sprite.svg#stain-3"></use>
+            </svg>
+            <svg width="60" height="62" class="w-[47px] xl:size-[61px]">
+              <use xlink:href="/sprite.svg#stain-4"></use>
+            </svg>
+            <svg width="61" height="61" class="size-12 xl:size-[61px]">
+              <use xlink:href="/sprite.svg#stain-5"></use>
+            </svg>
+          </div>
+          <div class="-order-1 mb-8 flex items-center gap-2.5 xl:order-none xl:mb-0">
+            <a href="/">
+              <svg width="110" height="48">
+                <use xlink:href="/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <span class="w-24 font-helios text-xs uppercase leading-[12px] text-green">
+              kids involved develop over here
+            </span>
+          </div>
+          <div class="space-y-1">
+            <ul class="my-[60px] flex justify-center gap-2.5 xl:my-0 xl:justify-end">
+              <li>
+                <a href="#">
+                  <svg width="23" height="23">
+                    <use xlink:href="/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a
+              href="tel:+357 22 466462"
+              class="xs:text-[33px] block font-montserrat-medium text-2xl leading-[41px] text-green"
+              >+357 22 466462</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SUCCESS ALERT -->
+    <div
+      id="alert-success"
+      data-twe-modal-init
+      class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+      tabindex="-1"
+      aria-labelledby="alert-success-label"
+      aria-hidden="true"
+    >
+      <div
+        data-twe-modal-dialog-ref
+        class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center p-4 opacity-0 transition-all duration-300 ease-in-out sm:mx-auto sm:max-w-[550px]"
+      >
+        <div
+          class="pointer-events-auto relative flex w-full items-center justify-between rounded-3xl border border-solid border-pink bg-white bg-clip-padding px-4 py-6 outline-none sm:px-8 sm:py-12"
+        >
+          <div class="w-full space-y-5 text-center">
+            <h2
+              id="alert-success-label"
+              class="font-avenir-semibold px-10 text-center text-xl sm:text-2xl"
+            >
+              Заявка успешно получена
+            </h2>
+            <button
+              type="button"
+              data-twe-modal-dismiss
+              class="mx-auto h-10 rounded-lg bg-black/20 px-10 font-montserrat-semibold text-sm transition-colors duration-200 hover:text-white sm:text-base"
+              aria-label="Close"
+            >
+              Цьомки ♡
+            </button>
+          </div>
+          <button
+            type="button"
+            class="absolute right-4 top-4 box-content rounded-none border-none text-black/20 transition-colors hover:text-black hover:no-underline focus:text-black/80 focus:outline-none sm:right-8 sm:top-8"
+            data-twe-modal-dismiss
+            aria-label="Close"
+          >
+            <svg class="size-6 sm:size-8">
+              <use xlink:href="/sprite.svg#cross"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ERROR ALERT -->
+    <div
+      id="alert-error"
+      data-twe-modal-init
+      class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+      tabindex="-1"
+      aria-labelledby="alert-error-label"
+      aria-hidden="true"
+    >
+      <div
+        data-twe-modal-dialog-ref
+        class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center p-4 opacity-0 transition-all duration-300 ease-in-out sm:mx-auto sm:max-w-[550px]"
+      >
+        <div
+          class="pointer-events-auto relative flex w-full items-center justify-between rounded-3xl border border-solid border-pink bg-white bg-clip-padding px-4 py-6 outline-none sm:px-8 sm:py-12"
+        >
+          <div class="w-full space-y-5 text-center">
+            <h2
+              id="alert-error-label"
+              class="font-avenir-semibold px-10 text-center text-xl sm:text-2xl"
+            >
+              Что-то пошло не так...
+            </h2>
+            <p class="text-sm">Попробуйте, пожалуйста, пройти тест позже</p>
+            <button
+              type="button"
+              data-twe-modal-dismiss
+              class="mx-auto h-10 rounded-lg bg-black/20 px-10 font-montserrat-semibold text-sm transition-colors duration-200 hover:text-white sm:text-base"
+              aria-label="Close"
+            >
+              Цьомки ♡
+            </button>
+          </div>
+          <button
+            type="button"
+            class="absolute right-4 top-4 box-content rounded-none border-none text-black/20 transition-colors hover:text-black hover:no-underline focus:text-black/80 focus:outline-none sm:right-8 sm:top-8"
+            data-twe-modal-dismiss
+            aria-label="Close"
+          >
+            <svg class="size-6 sm:size-8">
+              <use xlink:href="/sprite.svg#cross"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

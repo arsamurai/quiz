@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body class="bg-pink">
+    <header id="header" class="flex justify-center p-5 xl:p-7">
+      <a href="/">
+        <svg class="h-8 w-[75px] xl:h-[52px] xl:w-[120px]">
+          <use xlink:href="/sprite.svg#logo"></use>
+        </svg>
+      </a>
+    </header>
+
+    <!-- MAIN PAGE -->
+    <main id="main" class="flex h-[calc(100vh-310px)] items-center">
+      <div class="container max-w-[850px]">
+        <div
+          class="flex h-80 w-full flex-col overflow-hidden rounded-3xl bg-white sm:h-[184px] sm:flex-row"
+        >
+          <a
+            href="/personality-quiz/"
+            class="flex flex-1 items-center justify-center bg-answer-8 p-2 text-center font-helios uppercase text-white"
+            >Тест на выявление психологического типа личности ребенка</a
+          >
+          <a
+            href="/parenting-quiz/"
+            class="flex flex-1 items-center justify-center bg-answer-4 p-2 text-center font-helios uppercase text-white"
+            >Тест-опрос О методах воспитания в семье</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="pb-7">
+      <div class="container max-w-[1719px]">
+        <div
+          class="flex flex-col items-center justify-between rounded-3xl border border-solid border-white bg-gray px-[30px] py-9 xl:flex-row xl:px-[62px] xl:pb-[55px] xl:pt-[46px]"
+        >
+          <div class="flex items-center gap-1">
+            <svg width="61" height="59" class="h-[46px] w-12 xl:h-[59px] xl:w-[61px]">
+              <use xlink:href="/sprite.svg#stain-1"></use>
+            </svg>
+            <svg width="69" height="62" class="h-12 w-[55px] xl:h-[59px] xl:w-[61px]">
+              <use xlink:href="/sprite.svg#stain-2"></use>
+            </svg>
+            <svg width="71" height="70" class="size-[55px] xl:size-[71px]">
+              <use xlink:href="/sprite.svg#stain-3"></use>
+            </svg>
+            <svg width="60" height="62" class="w-[47px] xl:size-[61px]">
+              <use xlink:href="/sprite.svg#stain-4"></use>
+            </svg>
+            <svg width="61" height="61" class="size-12 xl:size-[61px]">
+              <use xlink:href="/sprite.svg#stain-5"></use>
+            </svg>
+          </div>
+          <div class="-order-1 mb-8 flex items-center gap-2.5 xl:order-none xl:mb-0">
+            <a href="/">
+              <svg width="110" height="48">
+                <use xlink:href="/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <span class="w-24 font-helios text-xs uppercase leading-[12px] text-green">
+              kids involved develop over here
+            </span>
+          </div>
+          <div class="space-y-1">
+            <ul class="my-[60px] flex justify-center gap-2.5 xl:my-0 xl:justify-end">
+              <li>
+                <a href="#">
+                  <svg width="23" height="23">
+                    <use xlink:href="/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a
+              href="tel:+357 22 466462"
+              class="xs:text-[33px] block font-montserrat-medium text-2xl leading-[41px] text-green"
+              >+357 22 466462</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

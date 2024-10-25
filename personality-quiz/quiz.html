@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body class="bg-pink">
+    <header
+      id="header"
+      class="sticky top-0 z-[1000] flex justify-between bg-pink/75 p-5 xl:static xl:justify-center xl:p-7"
+    >
+      <a href="/">
+        <svg class="h-8 w-[75px] xl:h-[52px] xl:w-[120px]">
+          <use xlink:href="/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <div
+        class="flex rounded-3xl bg-white px-4 py-1.5 font-montserrat-semibold text-base text-pink xl:hidden"
+      >
+        <span data-answers-count>00</span>
+        <span>/</span>
+        <span>80</span>
+      </div>
+    </header>
+
+    <!-- PERSONALITY QUIZ TEST PAGE -->
+    <main id="main" class="pb-20 pt-9">
+      <div class="container">
+        <h1
+          class="mx-auto mb-10 w-full max-w-[805px] text-center font-montserrat-semibold text-2xl text-white sm:text-3xl xl:mb-[70px] xl:text-5xl 2xl:text-6xl"
+        >
+          Тест на выявление психологического типа личности ребенка
+        </h1>
+        <div class="relative mb-10 flex gap-1.5 sm:gap-6 xl:mb-[60px]">
+          <ul class="flex-1 space-y-3">
+            <li
+              class="rounded-xl bg-white px-4 pb-9 pt-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9"
+              data-question-id="1"
+            >
+              <div class="mb-6 flex gap-2.5 font-montserrat-semibold text-base sm:text-xl">
+                <span class="text-pink">01.</span>
+                <h5>Вопрос 1</h5>
+              </div>
+              <ul class="flex flex-wrap justify-center gap-2 lg:justify-start">
+                <li class="group" data-answer-id="0">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-0 hover:bg-answer-0 hover:text-white group-[.active]:border-answer-0 group-[.active]:bg-answer-0 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    0
+                  </button>
+                </li>
+                <li class="group" data-answer-id="1">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-1 hover:bg-answer-1 hover:text-white group-[.active]:border-answer-1 group-[.active]:bg-answer-1 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    1
+                  </button>
+                </li>
+                <li class="group" data-answer-id="2">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-2 hover:bg-answer-2 hover:text-white group-[.active]:border-answer-2 group-[.active]:bg-answer-2 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    2
+                  </button>
+                </li>
+                <li class="group" data-answer-id="3">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-3 hover:bg-answer-3 hover:text-white group-[.active]:border-answer-3 group-[.active]:bg-answer-3 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    3
+                  </button>
+                </li>
+                <li class="group" data-answer-id="4">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-4 hover:bg-answer-4 hover:text-white group-[.active]:border-answer-4 group-[.active]:bg-answer-4 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    4
+                  </button>
+                </li>
+                <li class="group" data-answer-id="5">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-5 hover:bg-answer-5 hover:text-white group-[.active]:border-answer-5 group-[.active]:bg-answer-5 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    5
+                  </button>
+                </li>
+                <li class="group" data-answer-id="6">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-6 hover:bg-answer-6 hover:text-white group-[.active]:border-answer-6 group-[.active]:bg-answer-6 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    6
+                  </button>
+                </li>
+                <li class="group" data-answer-id="7">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-7 hover:bg-answer-7 hover:text-white group-[.active]:border-answer-7 group-[.active]:bg-answer-7 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    7
+                  </button>
+                </li>
+                <li class="group" data-answer-id="8">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-8 hover:bg-answer-8 hover:text-white group-[.active]:border-answer-8 group-[.active]:bg-answer-8 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    8
+                  </button>
+                </li>
+                <li class="group" data-answer-id="9">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-9 hover:bg-answer-9 hover:text-white group-[.active]:border-answer-9 group-[.active]:bg-answer-9 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    9
+                  </button>
+                </li>
+                <li class="group" data-answer-id="10">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-10 hover:bg-answer-10 hover:text-white group-[.active]:border-answer-10 group-[.active]:bg-answer-10 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    10
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="rounded-xl bg-white px-4 pb-9 pt-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9"
+              data-question-id="2"
+            >
+              <div class="mb-6 flex gap-2.5 font-montserrat-semibold text-base sm:text-xl">
+                <span class="text-pink">01.</span>
+                <h5>Вопрос 2</h5>
+              </div>
+              <ul class="flex flex-wrap justify-center gap-2 lg:justify-start">
+                <li class="group" data-answer-id="0">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-0 hover:bg-answer-0 hover:text-white group-[.active]:border-answer-0 group-[.active]:bg-answer-0 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    0
+                  </button>
+                </li>
+                <li class="group" data-answer-id="1">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-1 hover:bg-answer-1 hover:text-white group-[.active]:border-answer-1 group-[.active]:bg-answer-1 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    1
+                  </button>
+                </li>
+                <li class="group" data-answer-id="2">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-2 hover:bg-answer-2 hover:text-white group-[.active]:border-answer-2 group-[.active]:bg-answer-2 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    2
+                  </button>
+                </li>
+                <li class="group" data-answer-id="3">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-3 hover:bg-answer-3 hover:text-white group-[.active]:border-answer-3 group-[.active]:bg-answer-3 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    3
+                  </button>
+                </li>
+                <li class="group" data-answer-id="4">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-4 hover:bg-answer-4 hover:text-white group-[.active]:border-answer-4 group-[.active]:bg-answer-4 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    4
+                  </button>
+                </li>
+                <li class="group" data-answer-id="5">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-5 hover:bg-answer-5 hover:text-white group-[.active]:border-answer-5 group-[.active]:bg-answer-5 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    5
+                  </button>
+                </li>
+                <li class="group" data-answer-id="6">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-6 hover:bg-answer-6 hover:text-white group-[.active]:border-answer-6 group-[.active]:bg-answer-6 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    6
+                  </button>
+                </li>
+                <li class="group" data-answer-id="7">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-7 hover:bg-answer-7 hover:text-white group-[.active]:border-answer-7 group-[.active]:bg-answer-7 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    7
+                  </button>
+                </li>
+                <li class="group" data-answer-id="8">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-8 hover:bg-answer-8 hover:text-white group-[.active]:border-answer-8 group-[.active]:bg-answer-8 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    8
+                  </button>
+                </li>
+                <li class="group" data-answer-id="9">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-9 hover:bg-answer-9 hover:text-white group-[.active]:border-answer-9 group-[.active]:bg-answer-9 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    9
+                  </button>
+                </li>
+                <li class="group" data-answer-id="10">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-10 hover:bg-answer-10 hover:text-white group-[.active]:border-answer-10 group-[.active]:bg-answer-10 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    10
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="rounded-xl bg-white px-4 pb-9 pt-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9"
+              data-question-id="3"
+            >
+              <div class="mb-6 flex gap-2.5 font-montserrat-semibold text-base sm:text-xl">
+                <span class="text-pink">01.</span>
+                <h5>Вопрос 2</h5>
+              </div>
+              <ul class="flex flex-wrap justify-center gap-2 lg:justify-start">
+                <li class="group" data-answer-id="0">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-0 hover:bg-answer-0 hover:text-white group-[.active]:border-answer-0 group-[.active]:bg-answer-0 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    0
+                  </button>
+                </li>
+                <li class="group" data-answer-id="1">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-1 hover:bg-answer-1 hover:text-white group-[.active]:border-answer-1 group-[.active]:bg-answer-1 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    1
+                  </button>
+                </li>
+                <li class="group" data-answer-id="2">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-2 hover:bg-answer-2 hover:text-white group-[.active]:border-answer-2 group-[.active]:bg-answer-2 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    2
+                  </button>
+                </li>
+                <li class="group" data-answer-id="3">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-3 hover:bg-answer-3 hover:text-white group-[.active]:border-answer-3 group-[.active]:bg-answer-3 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    3
+                  </button>
+                </li>
+                <li class="group" data-answer-id="4">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-4 hover:bg-answer-4 hover:text-white group-[.active]:border-answer-4 group-[.active]:bg-answer-4 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    4
+                  </button>
+                </li>
+                <li class="group" data-answer-id="5">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-5 hover:bg-answer-5 hover:text-white group-[.active]:border-answer-5 group-[.active]:bg-answer-5 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    5
+                  </button>
+                </li>
+                <li class="group" data-answer-id="6">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-6 hover:bg-answer-6 hover:text-white group-[.active]:border-answer-6 group-[.active]:bg-answer-6 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    6
+                  </button>
+                </li>
+                <li class="group" data-answer-id="7">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-7 hover:bg-answer-7 hover:text-white group-[.active]:border-answer-7 group-[.active]:bg-answer-7 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    7
+                  </button>
+                </li>
+                <li class="group" data-answer-id="8">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-8 hover:bg-answer-8 hover:text-white group-[.active]:border-answer-8 group-[.active]:bg-answer-8 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    8
+                  </button>
+                </li>
+                <li class="group" data-answer-id="9">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-9 hover:bg-answer-9 hover:text-white group-[.active]:border-answer-9 group-[.active]:bg-answer-9 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    9
+                  </button>
+                </li>
+                <li class="group" data-answer-id="10">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-10 hover:bg-answer-10 hover:text-white group-[.active]:border-answer-10 group-[.active]:bg-answer-10 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    10
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="rounded-xl bg-white px-4 pb-9 pt-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9"
+              data-question-id="4"
+            >
+              <div class="mb-6 flex gap-2.5 font-montserrat-semibold text-base sm:text-xl">
+                <span class="text-pink">01.</span>
+                <h5>Вопрос 2</h5>
+              </div>
+              <ul class="flex flex-wrap justify-center gap-2 lg:justify-start">
+                <li class="group" data-answer-id="0">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-0 hover:bg-answer-0 hover:text-white group-[.active]:border-answer-0 group-[.active]:bg-answer-0 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    0
+                  </button>
+                </li>
+                <li class="group" data-answer-id="1">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-1 hover:bg-answer-1 hover:text-white group-[.active]:border-answer-1 group-[.active]:bg-answer-1 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    1
+                  </button>
+                </li>
+                <li class="group" data-answer-id="2">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-2 hover:bg-answer-2 hover:text-white group-[.active]:border-answer-2 group-[.active]:bg-answer-2 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    2
+                  </button>
+                </li>
+                <li class="group" data-answer-id="3">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-3 hover:bg-answer-3 hover:text-white group-[.active]:border-answer-3 group-[.active]:bg-answer-3 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    3
+                  </button>
+                </li>
+                <li class="group" data-answer-id="4">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-4 hover:bg-answer-4 hover:text-white group-[.active]:border-answer-4 group-[.active]:bg-answer-4 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    4
+                  </button>
+                </li>
+                <li class="group" data-answer-id="5">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-5 hover:bg-answer-5 hover:text-white group-[.active]:border-answer-5 group-[.active]:bg-answer-5 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    5
+                  </button>
+                </li>
+                <li class="group" data-answer-id="6">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-6 hover:bg-answer-6 hover:text-white group-[.active]:border-answer-6 group-[.active]:bg-answer-6 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    6
+                  </button>
+                </li>
+                <li class="group" data-answer-id="7">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-7 hover:bg-answer-7 hover:text-white group-[.active]:border-answer-7 group-[.active]:bg-answer-7 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    7
+                  </button>
+                </li>
+                <li class="group" data-answer-id="8">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-8 hover:bg-answer-8 hover:text-white group-[.active]:border-answer-8 group-[.active]:bg-answer-8 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    8
+                  </button>
+                </li>
+                <li class="group" data-answer-id="9">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-9 hover:bg-answer-9 hover:text-white group-[.active]:border-answer-9 group-[.active]:bg-answer-9 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    9
+                  </button>
+                </li>
+                <li class="group" data-answer-id="10">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-10 hover:bg-answer-10 hover:text-white group-[.active]:border-answer-10 group-[.active]:bg-answer-10 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    10
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="rounded-xl bg-white px-4 pb-9 pt-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9"
+              data-question-id="5"
+            >
+              <div class="mb-6 flex gap-2.5 font-montserrat-semibold text-base sm:text-xl">
+                <span class="text-pink">01.</span>
+                <h5>Вопрос 2</h5>
+              </div>
+              <ul class="flex flex-wrap justify-center gap-2 lg:justify-start">
+                <li class="group" data-answer-id="0">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-0 hover:bg-answer-0 hover:text-white group-[.active]:border-answer-0 group-[.active]:bg-answer-0 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    0
+                  </button>
+                </li>
+                <li class="group" data-answer-id="1">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-1 hover:bg-answer-1 hover:text-white group-[.active]:border-answer-1 group-[.active]:bg-answer-1 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    1
+                  </button>
+                </li>
+                <li class="group" data-answer-id="2">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-2 hover:bg-answer-2 hover:text-white group-[.active]:border-answer-2 group-[.active]:bg-answer-2 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    2
+                  </button>
+                </li>
+                <li class="group" data-answer-id="3">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-3 hover:bg-answer-3 hover:text-white group-[.active]:border-answer-3 group-[.active]:bg-answer-3 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    3
+                  </button>
+                </li>
+                <li class="group" data-answer-id="4">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-4 hover:bg-answer-4 hover:text-white group-[.active]:border-answer-4 group-[.active]:bg-answer-4 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    4
+                  </button>
+                </li>
+                <li class="group" data-answer-id="5">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-5 hover:bg-answer-5 hover:text-white group-[.active]:border-answer-5 group-[.active]:bg-answer-5 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    5
+                  </button>
+                </li>
+                <li class="group" data-answer-id="6">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-6 hover:bg-answer-6 hover:text-white group-[.active]:border-answer-6 group-[.active]:bg-answer-6 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    6
+                  </button>
+                </li>
+                <li class="group" data-answer-id="7">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-7 hover:bg-answer-7 hover:text-white group-[.active]:border-answer-7 group-[.active]:bg-answer-7 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    7
+                  </button>
+                </li>
+                <li class="group" data-answer-id="8">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-8 hover:bg-answer-8 hover:text-white group-[.active]:border-answer-8 group-[.active]:bg-answer-8 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    8
+                  </button>
+                </li>
+                <li class="group" data-answer-id="9">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-9 hover:bg-answer-9 hover:text-white group-[.active]:border-answer-9 group-[.active]:bg-answer-9 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    9
+                  </button>
+                </li>
+                <li class="group" data-answer-id="10">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-10 hover:bg-answer-10 hover:text-white group-[.active]:border-answer-10 group-[.active]:bg-answer-10 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    10
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="rounded-xl bg-white px-4 pb-9 pt-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9"
+              data-question-id="6"
+            >
+              <div class="mb-6 flex gap-2.5 font-montserrat-semibold text-base sm:text-xl">
+                <span class="text-pink">01.</span>
+                <h5>Вопрос 2</h5>
+              </div>
+              <ul class="flex flex-wrap justify-center gap-2 lg:justify-start">
+                <li class="group" data-answer-id="0">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-0 hover:bg-answer-0 hover:text-white group-[.active]:border-answer-0 group-[.active]:bg-answer-0 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    0
+                  </button>
+                </li>
+                <li class="group" data-answer-id="1">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-1 hover:bg-answer-1 hover:text-white group-[.active]:border-answer-1 group-[.active]:bg-answer-1 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    1
+                  </button>
+                </li>
+                <li class="group" data-answer-id="2">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-2 hover:bg-answer-2 hover:text-white group-[.active]:border-answer-2 group-[.active]:bg-answer-2 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    2
+                  </button>
+                </li>
+                <li class="group" data-answer-id="3">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-3 hover:bg-answer-3 hover:text-white group-[.active]:border-answer-3 group-[.active]:bg-answer-3 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    3
+                  </button>
+                </li>
+                <li class="group" data-answer-id="4">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-4 hover:bg-answer-4 hover:text-white group-[.active]:border-answer-4 group-[.active]:bg-answer-4 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    4
+                  </button>
+                </li>
+                <li class="group" data-answer-id="5">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-5 hover:bg-answer-5 hover:text-white group-[.active]:border-answer-5 group-[.active]:bg-answer-5 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    5
+                  </button>
+                </li>
+                <li class="group" data-answer-id="6">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-6 hover:bg-answer-6 hover:text-white group-[.active]:border-answer-6 group-[.active]:bg-answer-6 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    6
+                  </button>
+                </li>
+                <li class="group" data-answer-id="7">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-7 hover:bg-answer-7 hover:text-white group-[.active]:border-answer-7 group-[.active]:bg-answer-7 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    7
+                  </button>
+                </li>
+                <li class="group" data-answer-id="8">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-8 hover:bg-answer-8 hover:text-white group-[.active]:border-answer-8 group-[.active]:bg-answer-8 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    8
+                  </button>
+                </li>
+                <li class="group" data-answer-id="9">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-9 hover:bg-answer-9 hover:text-white group-[.active]:border-answer-9 group-[.active]:bg-answer-9 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    9
+                  </button>
+                </li>
+                <li class="group" data-answer-id="10">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-10 hover:bg-answer-10 hover:text-white group-[.active]:border-answer-10 group-[.active]:bg-answer-10 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    10
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="rounded-xl bg-white px-4 pb-9 pt-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9"
+              data-question-id="7"
+            >
+              <div class="mb-6 flex gap-2.5 font-montserrat-semibold text-base sm:text-xl">
+                <span class="text-pink">01.</span>
+                <h5>Вопрос 2</h5>
+              </div>
+              <ul class="flex flex-wrap justify-center gap-2 lg:justify-start">
+                <li class="group" data-answer-id="0">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-0 hover:bg-answer-0 hover:text-white group-[.active]:border-answer-0 group-[.active]:bg-answer-0 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    0
+                  </button>
+                </li>
+                <li class="group" data-answer-id="1">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-1 hover:bg-answer-1 hover:text-white group-[.active]:border-answer-1 group-[.active]:bg-answer-1 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    1
+                  </button>
+                </li>
+                <li class="group" data-answer-id="2">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-2 hover:bg-answer-2 hover:text-white group-[.active]:border-answer-2 group-[.active]:bg-answer-2 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    2
+                  </button>
+                </li>
+                <li class="group" data-answer-id="3">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-3 hover:bg-answer-3 hover:text-white group-[.active]:border-answer-3 group-[.active]:bg-answer-3 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    3
+                  </button>
+                </li>
+                <li class="group" data-answer-id="4">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-4 hover:bg-answer-4 hover:text-white group-[.active]:border-answer-4 group-[.active]:bg-answer-4 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    4
+                  </button>
+                </li>
+                <li class="group" data-answer-id="5">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-5 hover:bg-answer-5 hover:text-white group-[.active]:border-answer-5 group-[.active]:bg-answer-5 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    5
+                  </button>
+                </li>
+                <li class="group" data-answer-id="6">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-6 hover:bg-answer-6 hover:text-white group-[.active]:border-answer-6 group-[.active]:bg-answer-6 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    6
+                  </button>
+                </li>
+                <li class="group" data-answer-id="7">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-7 hover:bg-answer-7 hover:text-white group-[.active]:border-answer-7 group-[.active]:bg-answer-7 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    7
+                  </button>
+                </li>
+                <li class="group" data-answer-id="8">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-8 hover:bg-answer-8 hover:text-white group-[.active]:border-answer-8 group-[.active]:bg-answer-8 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    8
+                  </button>
+                </li>
+                <li class="group" data-answer-id="9">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-9 hover:bg-answer-9 hover:text-white group-[.active]:border-answer-9 group-[.active]:bg-answer-9 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    9
+                  </button>
+                </li>
+                <li class="group" data-answer-id="10">
+                  <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-full border border-solid border-primary text-[11px] transition-colors hover:border-answer-10 hover:bg-answer-10 hover:text-white group-[.active]:border-answer-10 group-[.active]:bg-answer-10 group-[.active]:text-white sm:size-[52px] sm:text-[20px]"
+                  >
+                    10
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div
+            class="sticky top-6 mr-[-10px] h-[calc(100vh-50px)] w-1 rounded-lg bg-white/20 sm:w-1.5"
+          >
+            <div
+              class="w-1 rounded-lg bg-white transition-all sm:w-1.5"
+              data-answers-progress-bar
+            ></div>
+            <div
+              class="absolute left-4 hidden -translate-y-full rounded-3xl bg-white px-5 py-2.5 font-montserrat-semibold text-xl text-pink transition-all xl:flex"
+              data-answers-progress-block
+            >
+              <span data-answers-count>00</span>
+              <span>/</span>
+              <span>80</span>
+            </div>
+          </div>
+        </div>
+        <button
+          id="result-button"
+          class="group relative mx-auto flex h-[60px] w-[246px] items-center justify-between rounded-[30px] bg-green p-1 font-montserrat-semibold text-sm text-white transition-opacity disabled:pointer-events-none disabled:opacity-30 sm:w-[280px] sm:text-base"
+        >
+          <span
+            class="flex size-[53px] min-w-[53px] items-center justify-center rounded-full bg-pink transition-transform group-hover:-translate-x-3"
+          >
+            <svg width="19" height="23">
+              <use xlink:href="/sprite.svg#arrow"></use>
+            </svg>
+          </span>
+          <span class="mr-5">Получить результаты</span>
+        </button>
+      </div>
+    </main>
+
+    <footer id="footer" class="pb-7">
+      <div class="container max-w-[1719px]">
+        <div
+          class="flex flex-col items-center justify-between rounded-3xl border border-solid border-white bg-gray px-[30px] py-9 xl:flex-row xl:px-[62px] xl:pb-[55px] xl:pt-[46px]"
+        >
+          <div class="flex items-center gap-1">
+            <svg width="61" height="59" class="h-[46px] w-12 xl:h-[59px] xl:w-[61px]">
+              <use xlink:href="/sprite.svg#stain-1"></use>
+            </svg>
+            <svg width="69" height="62" class="h-12 w-[55px] xl:h-[59px] xl:w-[61px]">
+              <use xlink:href="/sprite.svg#stain-2"></use>
+            </svg>
+            <svg width="71" height="70" class="size-[55px] xl:size-[71px]">
+              <use xlink:href="/sprite.svg#stain-3"></use>
+            </svg>
+            <svg width="60" height="62" class="w-[47px] xl:size-[61px]">
+              <use xlink:href="/sprite.svg#stain-4"></use>
+            </svg>
+            <svg width="61" height="61" class="size-12 xl:size-[61px]">
+              <use xlink:href="/sprite.svg#stain-5"></use>
+            </svg>
+          </div>
+          <div class="-order-1 mb-8 flex items-center gap-2.5 xl:order-none xl:mb-0">
+            <a href="/">
+              <svg width="110" height="48">
+                <use xlink:href="/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <span class="w-24 font-helios text-xs uppercase leading-[12px] text-green">
+              kids involved develop over here
+            </span>
+          </div>
+          <div class="space-y-1">
+            <ul class="my-[60px] flex justify-center gap-2.5 xl:my-0 xl:justify-end">
+              <li>
+                <a href="#">
+                  <svg width="23" height="23">
+                    <use xlink:href="/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a
+              href="tel:+357 22 466462"
+              class="xs:text-[33px] block font-montserrat-medium text-2xl leading-[41px] text-green"
+              >+357 22 466462</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

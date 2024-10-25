@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Montserrat */
+  @font-face {
+    font-family: "Montserrat Light";
+    src:
+      url("/fonts/Montserrat/Montserrat-Light.woff2") format("woff2"),
+      url("/fonts/Montserrat/Montserrat-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Montserrat Regular";
+    src:
+      url("/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"),
+      url("/fonts/Montserrat/Montserrat-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Montserrat Medium";
+    src:
+      url("/fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"),
+      url("/fonts/Montserrat/Montserrat-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Montserrat SemiBold";
+    src:
+      url("/fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2"),
+      url("/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Montserrat Bold";
+    src:
+      url("/fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"),
+      url("/fonts/Montserrat/Montserrat-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  /* Helios Ext C */
+  @font-face {
+    font-family: "Helios Ext C";
+    src:
+      url("../fonts/HeliosExtC/HeliosExtC-Bold.woff2") format("woff2"),
+      url("../fonts/HeliosExtC/HeliosExtC-Bold.woff") format("woff"),
+      url("../fonts/HeliosExtC/HeliosExtC-Bold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+  }
+}
+
+body {
+  @apply font-montserrat-regular tracking-[-0.03em] text-primary;
+}

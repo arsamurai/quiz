@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body class="bg-pink">
+    <header id="header" class="flex justify-center p-5 xl:p-7">
+      <a href="/">
+        <svg class="h-8 w-[75px] xl:h-[52px] xl:w-[120px]">
+          <use xlink:href="/sprite.svg#logo"></use>
+        </svg>
+      </a>
+    </header>
+
+    <!-- PERSONALITY QUIZ PAGE -->
+    <main id="main" class="pb-20 pt-9">
+      <div class="container max-w-[890px]">
+        <div class="space-y-12 2xl:space-y-[72px]">
+          <h1
+            class="text-center font-montserrat-semibold text-2xl text-white sm:text-3xl xl:text-5xl 2xl:text-6xl"
+          >
+            Тест на выявление психологического типа личности ребенка
+          </h1>
+          <div class="space-y-3">
+            <div
+              class="rounded-xl bg-white px-4 pb-2.5 pt-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9"
+            >
+              <h3 class="mb-4 font-montserrat-semibold text-base sm:mb-5 sm:text-2xl">
+                Комментарий:
+              </h3>
+              <textarea
+                id="comment"
+                name="comment"
+                placeholder="Заполняет родитель"
+                rows="4"
+                class="w-full resize-none rounded-xl border border-solid border-secondary px-5 py-4 text-xs outline-none sm:text-base"
+              ></textarea>
+            </div>
+            <div class="rounded-xl bg-white px-4 pb-7 pt-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9">
+              <h3 class="mb-3 font-montserrat-semibold text-base sm:mb-5 sm:text-2xl">
+                Ход тестирования:
+              </h3>
+              <p class="text-sm sm:text-xl">Проставьте каждому вопросу балл.</p>
+              <p class="text-sm sm:text-xl">Выберете подходящий ответ.</p>
+            </div>
+            <div class="rounded-xl bg-white px-4 py-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9">
+              <h3 class="mb-7 font-montserrat-semibold text-base sm:mb-5 sm:text-2xl">Ответы:</h3>
+              <div class="relative">
+                <div
+                  class="bg-marksGradient absolute left-[32px] top-3 h-[96%] w-1 sm:left-[38px] sm:w-1.5"
+                ></div>
+                <div class="relative mb-8 flex gap-[14px]">
+                  <span
+                    class="min-w-[15px] font-montserrat-semibold text-sm sm:min-w-[21px] sm:text-xl"
+                    >0</span
+                  >
+                  <span
+                    class="mt-1.5 size-2.5 min-w-2.5 rounded-full border border-solid border-secondary bg-white sm:mt-2 sm:size-3 sm:min-w-3"
+                  ></span>
+                  <p class="text-sm sm:text-xl">Ну что вы, ни в коем случае!</p>
+                </div>
+                <div class="relative mb-8 flex gap-[14px]">
+                  <span
+                    class="min-w-[15px] font-montserrat-semibold text-sm sm:min-w-[21px] sm:text-xl"
+                    >1</span
+                  >
+                  <span
+                    class="mt-1.5 size-2.5 min-w-2.5 rounded-full border border-solid border-secondary bg-white sm:mt-2 sm:size-3 sm:min-w-3"
+                  ></span>
+                  <p class="text-sm sm:text-xl">Нет, это не так.</p>
+                </div>
+                <div class="relative mb-8 flex gap-[14px]">
+                  <span
+                    class="min-w-[15px] font-montserrat-semibold text-sm sm:min-w-[21px] sm:text-xl"
+                    >2</span
+                  >
+                  <span
+                    class="mt-1.5 size-2.5 min-w-2.5 rounded-full border border-solid border-secondary bg-white sm:mt-2 sm:size-3 sm:min-w-3"
+                  ></span>
+                  <p class="text-sm sm:text-xl">В значительной степени нет.</p>
+                </div>
+                <div class="relative mb-8 flex gap-[14px]">
+                  <span
+                    class="min-w-[15px] font-montserrat-semibold text-sm sm:min-w-[21px] sm:text-xl"
+                    >3</span
+                  >
+                  <span
+                    class="mt-1.5 size-2.5 min-w-2.5 rounded-full border border-solid border-secondary bg-white sm:mt-2 sm:size-3 sm:min-w-3"
+                  ></span>
+                  <p class="text-sm sm:text-xl">Вобщем-то нет.</p>
+                </div>
+                <div class="relative mb-8 flex gap-[14px]">
+                  <span
+                    class="min-w-[15px] font-montserrat-semibold text-sm sm:min-w-[21px] sm:text-xl"
+                    >4</span
+                  >
+                  <span
+                    class="mt-1.5 size-2.5 min-w-2.5 rounded-full border border-solid border-secondary bg-white sm:mt-2 sm:size-3 sm:min-w-3"
+                  ></span>
+                  <p class="text-sm sm:text-xl">Скорее нет, чем да.</p>
+                </div>
+                <div class="relative mb-8 flex gap-[14px]">
+                  <span
+                    class="min-w-[15px] font-montserrat-semibold text-sm sm:min-w-[21px] sm:text-xl"
+                    >5</span
+                  >
+                  <span
+                    class="mt-1.5 size-2.5 min-w-2.5 rounded-full border border-solid border-secondary bg-white sm:mt-2 sm:size-3 sm:min-w-3"
+                  ></span>
+                  <p class="text-sm sm:text-xl">и да и нет (ни да, ни нет).</p>
+                </div>
+                <div class="relative mb-8 flex gap-[14px]">
+                  <span
+                    class="min-w-[15px] font-montserrat-semibold text-sm sm:min-w-[21px] sm:text-xl"
+                    >6</span
+                  >
+                  <span
+                    class="mt-1.5 size-2.5 min-w-2.5 rounded-full border border-solid border-secondary bg-white sm:mt-2 sm:size-3 sm:min-w-3"
+                  ></span>
+                  <p class="text-sm sm:text-xl">Скорее да, чем нет.</p>
+                </div>
+                <div class="relative mb-8 flex gap-[14px]">
+                  <span
+                    class="min-w-[15px] font-montserrat-semibold text-sm sm:min-w-[21px] sm:text-xl"
+                    >7</span
+                  >
+                  <span
+                    class="mt-1.5 size-2.5 min-w-2.5 rounded-full border border-solid border-secondary bg-white sm:mt-2 sm:size-3 sm:min-w-3"
+                  ></span>
+                  <p class="text-sm sm:text-xl">Вполне возможно.</p>
+                </div>
+                <div class="relative mb-8 flex gap-[14px]">
+                  <span
+                    class="min-w-[15px] font-montserrat-semibold text-sm sm:min-w-[21px] sm:text-xl"
+                    >8</span
+                  >
+                  <span
+                    class="mt-1.5 size-2.5 min-w-2.5 rounded-full border border-solid border-secondary bg-white sm:mt-2 sm:size-3 sm:min-w-3"
+                  ></span>
+                  <p class="text-sm sm:text-xl">Это весьма возможно.</p>
+                </div>
+                <div class="relative mb-8 flex gap-[14px]">
+                  <span
+                    class="min-w-[15px] font-montserrat-semibold text-sm sm:min-w-[21px] sm:text-xl"
+                    >9</span
+                  >
+                  <span
+                    class="mt-1.5 size-2.5 min-w-2.5 rounded-full border border-solid border-secondary bg-white sm:mt-2 sm:size-3 sm:min-w-3"
+                  ></span>
+                  <p class="text-sm sm:text-xl">Да, в очень большой степени это так.</p>
+                </div>
+                <div class="relative flex gap-[14px]">
+                  <span
+                    class="min-w-[15px] font-montserrat-semibold text-sm sm:min-w-[21px] sm:text-xl"
+                    >10</span
+                  >
+                  <span
+                    class="mt-1.5 size-2.5 min-w-2.5 rounded-full border border-solid border-secondary bg-white sm:mt-2 sm:size-3 sm:min-w-3"
+                  ></span>
+                  <p class="text-sm sm:text-xl">Ну конечно, это так и есть.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <a
+              href="/personality-quiz/quiz"
+              class="group relative flex h-[60px] w-60 items-center justify-between rounded-[30px] bg-green p-1 font-montserrat-semibold text-base text-white"
+            >
+              <span class="ml-[26px]">Перейти к тесту</span>
+              <span
+                class="flex size-[53px] items-center justify-center rounded-full bg-pink transition-transform group-hover:translate-x-3"
+              >
+                <svg width="19" height="23">
+                  <use xlink:href="/sprite.svg#arrow"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="pb-7">
+      <div class="container max-w-[1719px]">
+        <div
+          class="flex flex-col items-center justify-between rounded-3xl border border-solid border-white bg-gray px-[30px] py-9 xl:flex-row xl:px-[62px] xl:pb-[55px] xl:pt-[46px]"
+        >
+          <div class="flex items-center gap-1">
+            <svg width="61" height="59" class="h-[46px] w-12 xl:h-[59px] xl:w-[61px]">
+              <use xlink:href="/sprite.svg#stain-1"></use>
+            </svg>
+            <svg width="69" height="62" class="h-12 w-[55px] xl:h-[59px] xl:w-[61px]">
+              <use xlink:href="/sprite.svg#stain-2"></use>
+            </svg>
+            <svg width="71" height="70" class="size-[55px] xl:size-[71px]">
+              <use xlink:href="/sprite.svg#stain-3"></use>
+            </svg>
+            <svg width="60" height="62" class="w-[47px] xl:size-[61px]">
+              <use xlink:href="/sprite.svg#stain-4"></use>
+            </svg>
+            <svg width="61" height="61" class="size-12 xl:size-[61px]">
+              <use xlink:href="/sprite.svg#stain-5"></use>
+            </svg>
+          </div>
+          <div class="-order-1 mb-8 flex items-center gap-2.5 xl:order-none xl:mb-0">
+            <a href="/">
+              <svg width="110" height="48">
+                <use xlink:href="/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <span class="w-24 font-helios text-xs uppercase leading-[12px] text-green">
+              kids involved develop over here
+            </span>
+          </div>
+          <div class="space-y-1">
+            <ul class="my-[60px] flex justify-center gap-2.5 xl:my-0 xl:justify-end">
+              <li>
+                <a href="#">
+                  <svg width="23" height="23">
+                    <use xlink:href="/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a
+              href="tel:+357 22 466462"
+              class="xs:text-[33px] block font-montserrat-medium text-2xl leading-[41px] text-green"
+              >+357 22 466462</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

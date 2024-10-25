@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body class="bg-secondary-2">
+    <header
+      id="header"
+      class="bg-secondary-2/75 sticky top-0 z-[1000] flex justify-between p-5 xl:static xl:justify-center xl:p-7"
+    >
+      <a href="/">
+        <svg class="h-8 w-[75px] xl:h-[52px] xl:w-[120px]">
+          <use xlink:href="/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <div
+        class="flex rounded-3xl bg-white px-4 py-1.5 font-montserrat-semibold text-base text-green xl:hidden"
+      >
+        <span data-answers-count>00</span>
+        <span>/</span>
+        <span>80</span>
+      </div>
+    </header>
+
+    <!-- PERSONALITY QUIZ TEST PAGE -->
+    <main id="main" class="pb-20 pt-9">
+      <div class="container">
+        <h1
+          class="mx-auto mb-10 w-full max-w-[805px] text-center font-montserrat-semibold text-2xl text-green sm:text-3xl xl:mb-[70px] xl:text-5xl 2xl:text-6xl"
+        >
+          Тест на выявление психологического типа личности ребенка
+        </h1>
+        <div class="relative mb-10 flex gap-1.5 sm:gap-6 xl:mb-[60px]">
+          <ul class="flex-1 space-y-3">
+            <li
+              class="rounded-xl bg-white px-4 pb-5 pt-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9"
+              data-question-id="1"
+            >
+              <div class="mb-6 flex gap-2.5 font-montserrat-semibold text-base sm:text-xl">
+                <span class="text-green">01.</span>
+                <h5>Вопрос 1</h5>
+              </div>
+              <ul class="ml-6 flex flex-wrap gap-2 sm:ml-[30px]">
+                <li class="group" data-answer-id="Да">
+                  <span
+                    class="flex cursor-pointer items-center gap-2.5 rounded-full border border-solid border-primary px-5 py-2.5 font-montserrat-medium text-base transition-colors hover:border-green hover:bg-green hover:text-white group-[.active]:border-green group-[.active]:bg-green group-[.active]:text-white sm:px-6 sm:py-[14px] sm:text-xl"
+                  >
+                    <svg class="h-2.5 w-3 sm:h-[14px] sm:w-4">
+                      <use xlink:href="/sprite.svg#check"></use>
+                    </svg>
+                    <span>Да</span>
+                  </span>
+                </li>
+                <li class="group" data-answer-id="Нет">
+                  <span
+                    class="flex cursor-pointer items-center gap-2.5 rounded-full border border-solid border-primary px-5 py-2.5 font-montserrat-medium text-base transition-colors hover:border-pink hover:bg-pink hover:text-white group-[.active]:border-pink group-[.active]:bg-pink group-[.active]:text-white sm:px-6 sm:py-[14px] sm:text-xl"
+                  >
+                    <svg class="h-3 w-2.5 sm:h-4 sm:w-[13px]">
+                      <use xlink:href="/sprite.svg#cross"></use>
+                    </svg>
+                    <span>Нет</span>
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="rounded-xl bg-white px-4 pb-5 pt-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9"
+              data-question-id="2"
+            >
+              <div class="mb-6 flex gap-2.5 font-montserrat-semibold text-base sm:text-xl">
+                <span class="text-green">01.</span>
+                <h5>Вопрос 1</h5>
+              </div>
+              <ul class="ml-6 flex flex-wrap gap-2 sm:ml-[30px]">
+                <li class="group" data-answer-id="Да">
+                  <span
+                    class="flex cursor-pointer items-center gap-2.5 rounded-full border border-solid border-primary px-5 py-2.5 font-montserrat-medium text-base transition-colors hover:border-green hover:bg-green hover:text-white group-[.active]:border-green group-[.active]:bg-green group-[.active]:text-white sm:px-6 sm:py-[14px] sm:text-xl"
+                  >
+                    <svg class="h-2.5 w-3 sm:h-[14px] sm:w-4">
+                      <use xlink:href="/sprite.svg#check"></use>
+                    </svg>
+                    <span>Да</span>
+                  </span>
+                </li>
+                <li class="group" data-answer-id="Нет">
+                  <span
+                    class="flex cursor-pointer items-center gap-2.5 rounded-full border border-solid border-primary px-5 py-2.5 font-montserrat-medium text-base transition-colors hover:border-pink hover:bg-pink hover:text-white group-[.active]:border-pink group-[.active]:bg-pink group-[.active]:text-white sm:px-6 sm:py-[14px] sm:text-xl"
+                  >
+                    <svg class="h-3 w-2.5 sm:h-4 sm:w-[13px]">
+                      <use xlink:href="/sprite.svg#cross"></use>
+                    </svg>
+                    <span>Нет</span>
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="rounded-xl bg-white px-4 pb-5 pt-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9"
+              data-question-id="3"
+            >
+              <div class="mb-6 flex gap-2.5 font-montserrat-semibold text-base sm:text-xl">
+                <span class="text-green">01.</span>
+                <h5>Вопрос 1</h5>
+              </div>
+              <ul class="ml-6 flex flex-wrap gap-2 sm:ml-[30px]">
+                <li class="group" data-answer-id="Да">
+                  <span
+                    class="flex cursor-pointer items-center gap-2.5 rounded-full border border-solid border-primary px-5 py-2.5 font-montserrat-medium text-base transition-colors hover:border-green hover:bg-green hover:text-white group-[.active]:border-green group-[.active]:bg-green group-[.active]:text-white sm:px-6 sm:py-[14px] sm:text-xl"
+                  >
+                    <svg class="h-2.5 w-3 sm:h-[14px] sm:w-4">
+                      <use xlink:href="/sprite.svg#check"></use>
+                    </svg>
+                    <span>Да</span>
+                  </span>
+                </li>
+                <li class="group" data-answer-id="Нет">
+                  <span
+                    class="flex cursor-pointer items-center gap-2.5 rounded-full border border-solid border-primary px-5 py-2.5 font-montserrat-medium text-base transition-colors hover:border-pink hover:bg-pink hover:text-white group-[.active]:border-pink group-[.active]:bg-pink group-[.active]:text-white sm:px-6 sm:py-[14px] sm:text-xl"
+                  >
+                    <svg class="h-3 w-2.5 sm:h-4 sm:w-[13px]">
+                      <use xlink:href="/sprite.svg#cross"></use>
+                    </svg>
+                    <span>Нет</span>
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="rounded-xl bg-white px-4 pb-5 pt-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9"
+              data-question-id="4"
+            >
+              <div class="mb-6 flex gap-2.5 font-montserrat-semibold text-base sm:text-xl">
+                <span class="text-green">01.</span>
+                <h5>Вопрос 1</h5>
+              </div>
+              <ul class="ml-6 flex flex-wrap gap-2 sm:ml-[30px]">
+                <li class="group" data-answer-id="Да">
+                  <span
+                    class="flex cursor-pointer items-center gap-2.5 rounded-full border border-solid border-primary px-5 py-2.5 font-montserrat-medium text-base transition-colors hover:border-green hover:bg-green hover:text-white group-[.active]:border-green group-[.active]:bg-green group-[.active]:text-white sm:px-6 sm:py-[14px] sm:text-xl"
+                  >
+                    <svg class="h-2.5 w-3 sm:h-[14px] sm:w-4">
+                      <use xlink:href="/sprite.svg#check"></use>
+                    </svg>
+                    <span>Да</span>
+                  </span>
+                </li>
+                <li class="group" data-answer-id="Нет">
+                  <span
+                    class="flex cursor-pointer items-center gap-2.5 rounded-full border border-solid border-primary px-5 py-2.5 font-montserrat-medium text-base transition-colors hover:border-pink hover:bg-pink hover:text-white group-[.active]:border-pink group-[.active]:bg-pink group-[.active]:text-white sm:px-6 sm:py-[14px] sm:text-xl"
+                  >
+                    <svg class="h-3 w-2.5 sm:h-4 sm:w-[13px]">
+                      <use xlink:href="/sprite.svg#cross"></use>
+                    </svg>
+                    <span>Нет</span>
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="rounded-xl bg-white px-4 pb-5 pt-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9"
+              data-question-id="5"
+            >
+              <div class="mb-6 flex gap-2.5 font-montserrat-semibold text-base sm:text-xl">
+                <span class="text-green">01.</span>
+                <h5>Вопрос 1</h5>
+              </div>
+              <ul class="ml-6 flex flex-wrap gap-2 sm:ml-[30px]">
+                <li class="group" data-answer-id="Да">
+                  <span
+                    class="flex cursor-pointer items-center gap-2.5 rounded-full border border-solid border-primary px-5 py-2.5 font-montserrat-medium text-base transition-colors hover:border-green hover:bg-green hover:text-white group-[.active]:border-green group-[.active]:bg-green group-[.active]:text-white sm:px-6 sm:py-[14px] sm:text-xl"
+                  >
+                    <svg class="h-2.5 w-3 sm:h-[14px] sm:w-4">
+                      <use xlink:href="/sprite.svg#check"></use>
+                    </svg>
+                    <span>Да</span>
+                  </span>
+                </li>
+                <li class="group" data-answer-id="Нет">
+                  <span
+                    class="flex cursor-pointer items-center gap-2.5 rounded-full border border-solid border-primary px-5 py-2.5 font-montserrat-medium text-base transition-colors hover:border-pink hover:bg-pink hover:text-white group-[.active]:border-pink group-[.active]:bg-pink group-[.active]:text-white sm:px-6 sm:py-[14px] sm:text-xl"
+                  >
+                    <svg class="h-3 w-2.5 sm:h-4 sm:w-[13px]">
+                      <use xlink:href="/sprite.svg#cross"></use>
+                    </svg>
+                    <span>Нет</span>
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="rounded-xl bg-white px-4 pb-5 pt-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9"
+              data-question-id="6"
+            >
+              <div class="mb-6 flex gap-2.5 font-montserrat-semibold text-base sm:text-xl">
+                <span class="text-green">01.</span>
+                <h5>Вопрос 1</h5>
+              </div>
+              <ul class="ml-6 flex flex-wrap gap-2 sm:ml-[30px]">
+                <li class="group" data-answer-id="Да">
+                  <span
+                    class="flex cursor-pointer items-center gap-2.5 rounded-full border border-solid border-primary px-5 py-2.5 font-montserrat-medium text-base transition-colors hover:border-green hover:bg-green hover:text-white group-[.active]:border-green group-[.active]:bg-green group-[.active]:text-white sm:px-6 sm:py-[14px] sm:text-xl"
+                  >
+                    <svg class="h-2.5 w-3 sm:h-[14px] sm:w-4">
+                      <use xlink:href="/sprite.svg#check"></use>
+                    </svg>
+                    <span>Да</span>
+                  </span>
+                </li>
+                <li class="group" data-answer-id="Нет">
+                  <span
+                    class="flex cursor-pointer items-center gap-2.5 rounded-full border border-solid border-primary px-5 py-2.5 font-montserrat-medium text-base transition-colors hover:border-pink hover:bg-pink hover:text-white group-[.active]:border-pink group-[.active]:bg-pink group-[.active]:text-white sm:px-6 sm:py-[14px] sm:text-xl"
+                  >
+                    <svg class="h-3 w-2.5 sm:h-4 sm:w-[13px]">
+                      <use xlink:href="/sprite.svg#cross"></use>
+                    </svg>
+                    <span>Нет</span>
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="rounded-xl bg-white px-4 pb-5 pt-5 sm:rounded-3xl sm:px-10 sm:pb-7 sm:pt-9"
+              data-question-id="7"
+            >
+              <div class="mb-6 flex gap-2.5 font-montserrat-semibold text-base sm:text-xl">
+                <span class="text-green">01.</span>
+                <h5>Вопрос 1</h5>
+              </div>
+              <ul class="ml-6 flex flex-wrap gap-2 sm:ml-[30px]">
+                <li class="group" data-answer-id="Да">
+                  <span
+                    class="flex cursor-pointer items-center gap-2.5 rounded-full border border-solid border-primary px-5 py-2.5 font-montserrat-medium text-base transition-colors hover:border-green hover:bg-green hover:text-white group-[.active]:border-green group-[.active]:bg-green group-[.active]:text-white sm:px-6 sm:py-[14px] sm:text-xl"
+                  >
+                    <svg class="h-2.5 w-3 sm:h-[14px] sm:w-4">
+                      <use xlink:href="/sprite.svg#check"></use>
+                    </svg>
+                    <span>Да</span>
+                  </span>
+                </li>
+                <li class="group" data-answer-id="Нет">
+                  <span
+                    class="flex cursor-pointer items-center gap-2.5 rounded-full border border-solid border-primary px-5 py-2.5 font-montserrat-medium text-base transition-colors hover:border-pink hover:bg-pink hover:text-white group-[.active]:border-pink group-[.active]:bg-pink group-[.active]:text-white sm:px-6 sm:py-[14px] sm:text-xl"
+                  >
+                    <svg class="h-3 w-2.5 sm:h-4 sm:w-[13px]">
+                      <use xlink:href="/sprite.svg#cross"></use>
+                    </svg>
+                    <span>Нет</span>
+                  </span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div
+            class="sticky top-6 mr-[-10px] h-[calc(100vh-50px)] w-1 rounded-lg bg-white/20 sm:w-1.5"
+          >
+            <div
+              class="w-1 rounded-lg bg-white transition-all sm:w-1.5"
+              data-answers-progress-bar
+            ></div>
+            <div
+              class="absolute left-4 hidden -translate-y-full rounded-3xl bg-white px-5 py-2.5 font-montserrat-semibold text-xl text-pink transition-all xl:flex"
+              data-answers-progress-block
+            >
+              <span data-answers-count>00</span>
+              <span>/</span>
+              <span>80</span>
+            </div>
+          </div>
+        </div>
+        <button
+          id="result-button"
+          class="group relative mx-auto flex h-[60px] w-[246px] items-center justify-between rounded-[30px] bg-green p-1 font-montserrat-semibold text-sm text-white transition-opacity disabled:pointer-events-none disabled:opacity-30 sm:w-[280px] sm:text-base"
+        >
+          <span
+            class="group-hover:bg-secondary-2 flex size-[53px] min-w-[53px] items-center justify-center rounded-full bg-pink transition-all group-hover:-translate-x-3"
+          >
+            <svg width="19" height="23">
+              <use xlink:href="/sprite.svg#arrow"></use>
+            </svg>
+          </span>
+          <span class="mr-5">Получить результаты</span>
+        </button>
+      </div>
+    </main>
+
+    <footer id="footer" class="pb-7">
+      <div class="container max-w-[1719px]">
+        <div
+          class="flex flex-col items-center justify-between rounded-3xl border border-solid border-white bg-gray px-[30px] py-9 xl:flex-row xl:px-[62px] xl:pb-[55px] xl:pt-[46px]"
+        >
+          <div class="flex items-center gap-1">
+            <svg width="61" height="59" class="h-[46px] w-12 xl:h-[59px] xl:w-[61px]">
+              <use xlink:href="/sprite.svg#stain-1"></use>
+            </svg>
+            <svg width="69" height="62" class="h-12 w-[55px] xl:h-[59px] xl:w-[61px]">
+              <use xlink:href="/sprite.svg#stain-2"></use>
+            </svg>
+            <svg width="71" height="70" class="size-[55px] xl:size-[71px]">
+              <use xlink:href="/sprite.svg#stain-3"></use>
+            </svg>
+            <svg width="60" height="62" class="w-[47px] xl:size-[61px]">
+              <use xlink:href="/sprite.svg#stain-4"></use>
+            </svg>
+            <svg width="61" height="61" class="size-12 xl:size-[61px]">
+              <use xlink:href="/sprite.svg#stain-5"></use>
+            </svg>
+          </div>
+          <div class="-order-1 mb-8 flex items-center gap-2.5 xl:order-none xl:mb-0">
+            <a href="/">
+              <svg width="110" height="48">
+                <use xlink:href="/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <span class="w-24 font-helios text-xs uppercase leading-[12px] text-green">
+              kids involved develop over here
+            </span>
+          </div>
+          <div class="space-y-1">
+            <ul class="my-[60px] flex justify-center gap-2.5 xl:my-0 xl:justify-end">
+              <li>
+                <a href="#">
+                  <svg width="23" height="23">
+                    <use xlink:href="/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a
+              href="tel:+357 22 466462"
+              class="xs:text-[33px] block font-montserrat-medium text-2xl leading-[41px] text-green"
+              >+357 22 466462</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
