@@ -53,6 +53,18 @@ export default {
       screens: {
         xs: "375px",
       },
+      keyframes: {
+        "slide-down": {
+          "0%": {
+            transform: "translateY(-25%)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: "1",
+          },
+        },
+      },
     },
   },
   plugins: [require("tw-elements/plugin.cjs")],

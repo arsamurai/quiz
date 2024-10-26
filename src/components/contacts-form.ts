@@ -2,8 +2,8 @@ import emailjs from "@emailjs/browser"
 import { Modal } from "tw-elements"
 import { COMMENT_KEY } from "./comment"
 import { getQuizKey, getQuizName } from "./quiz-config"
-import emailSettings from "./email"
-import { Answer } from "./answers"
+import emailSettings from "./emailjs"
+import { Answer, loadAnswersFromLocalStorage } from "./answers-storage"
 
 interface FormValues {
   quizName: string
@@ -22,10 +22,9 @@ const errorAlert = new Modal(document.getElementById("alert-error"))
 
 const totalQuestions = localStorage.getItem(`${QUIZ_KEY}-total`)
 const comment = localStorage.getItem(COMMENT_KEY)
-const answers = localStorage.getItem(QUIZ_KEY) ?? ""
-const parsedAnswers: Answer[] = answers ? JSON.parse(answers) : []
+const answers = loadAnswersFromLocalStorage()
 
-if ((!parsedAnswers.length || parsedAnswers.length !== Number(totalQuestions)) && submitBtn) {
+if ((!answers.length || answers.length !== Number(totalQuestions)) && submitBtn) {
   submitBtn.disabled = true
 }
 
@@ -50,7 +49,7 @@ form?.addEventListener("submit", function (event: Event) {
     phone: phoneInput.value.replace(/\D/g, ""),
     email: emailInput.value,
     comment: comment,
-    answers: formatAnswers(parsedAnswers),
+    answers: formatAnswers(answers),
   }
 
   const clearForm = () => {
@@ -61,7 +60,7 @@ form?.addEventListener("submit", function (event: Event) {
     if (comment) {
       localStorage.removeItem(COMMENT_KEY)
     }
-    if (parsedAnswers.length) {
+    if (answers.length) {
       localStorage.removeItem(QUIZ_KEY)
       localStorage.removeItem(`${QUIZ_KEY}-total`)
     }
